@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homescreen for Raspberry Pi by Ethan Barnes</title>
+        <link type="text/css" rel="stylesheet" href="main.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'/>
+        <script type="text/javascript" src="jquery.simpleWeather.js"></script>
+        <script type="text/javascript" src="jquery.simpleWeather.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+        <script src="jquery.simpleWeather.js" charset="utf-8"></script>
+        <script type="text/javascript" src="js/date.js"></script>
+        <script type="text/javascript" src="js/time/time.js"></script>
+        <script type="text/javascript" src="js/time/date.js"></script>
+        <script type="text/javascript" src="js/time/subtime.js"></script>
+        <script type="text/javascript" src="js/weather.js"></script>
+        <script type="text/javascript" src="js/events.js"></script>
+        <script type="text/javascript" src="js/news.js"></script>
+        <script src="https://apis.google.com/js/client.js?onload=checkAuth"></script>
+        
+        <!--<div>Icons made by <a href="http://www.flaticon.com/authors/rami-mcmin" title="Rami McMin">Rami McMin</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+    </head>
+    <body>
+        <div class="topleft">
+            <div class="time">
+                <span id="time"></span>
+                <span id="date"></span>
+                <span id="subtime"></span>
+            </div>
+        </div>
+        <div class="topright">
+            <div class="weather">
+                <div id="current">
+                    <span id="currenttemp"></span>
+                    <span id="currentimg"></span>
+                </div>
+                <div id="day1">
+                    <span id="day1temp"></span>
+                    <div id="day1img"></div>
+                </div>
+                <div id="day2">
+                    <span id="day2temp"></span>
+                    <div id="day2img"></div>
+                </div>
+                <div id="day3">
+                    <span id="day3temp"></span>
+                    <div id="day3img"></div>
+                </div>
+                <div id="day4">
+                    <span id="day4temp"></span>
+                    <div id="day4img"></div>
+                </div>
+            </div>
+        </div>
+        <div class="bottomleft">
+            <div class="events">
+                <p>Upcoming Events:</p>
+                <span id="events"></span> 
+            </div>
+        </div>
+        <div class="bottomright">
+            <div class="news">
+                <span id="news0"></span>
+                <span id="news1"></span>
+                <span id="news2"></span>
+            </div>
+        </div>
+    </body>
+</html>
